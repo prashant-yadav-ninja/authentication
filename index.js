@@ -8,7 +8,7 @@ const db = require('./config/mongoose') ;
 
 app.use(express.urlencoded()) ;
 
-// app.use(cookieParser()) ;
+app.use(cookieParser()) ;
 
 app.use('/', require('./routes'));
 
